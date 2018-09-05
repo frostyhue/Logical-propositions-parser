@@ -5,9 +5,9 @@ The project is about creating a flexible web tool for converting a formula into 
 The project exists with the sole purpose of learning and achieving goals of ale1, class at Fontys Hogeschole Eindhoven.
 
 ## Build status
-Builv version Aplha
+Build version Aplha
 
-[![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)]
+![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)
 
 
 ## Screenshots
