@@ -7,15 +7,15 @@ The project exists with the sole purpose of learning and achieving goals of ale1
 ## Build status
 Builv version Aplha
 
-[![Build Status](https://travis-ci.org/akashnimare/foco)]
+[![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)]
 
 
 ## Screenshots
 Work in progress!
 
 ## Tech/framework used
-Langauge: Python 3.7.0
-Framework: Django
+- Langauge: Python 3.7.0
+- Framework: Django
 
 <b>Built with</b>
 - [PyCharm](https://www.jetbrains.com/pycharm/)
