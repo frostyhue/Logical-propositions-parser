@@ -11,7 +11,7 @@ Build version Aplha
 
 
 ## Screenshots
-Work in progress!
+![](screenshots/web_gui_v1.gif)
 
 ## Tech/framework used
 - Langauge: Python 3.7.0
