@@ -1,34 +1,32 @@
+{% extends 'layout.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Tool</title>
-    <!-- CSS-->
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'style/materialize.css' %}">
-    <link rel="stylesheet" href="{% static 'style/materialize.min.css' %}">
-    <link rel="shortcut icon" href="{% static 'images/square-root-alt-solid.ico' type='image/x-icon' %}">
-</head>
-<body>
+{% block content %}
 <div>
     <h5 class="center-align">ASCII to Logical notation and more converter!</h5>
   </div>
 <div class="container">
 {#The input row#}
 <div class="row">
-    <form class="col s12">
+
+{#    form for posting the input and receiving the ouptup #}
+
+    <form method="POST" action="" class="col s12">
+        {% csrf_token %}
       <div class="row">
         <div class="input-field col s6">
           <input placeholder="=(>(A, B), |(~(A), B))" id="Input" type="text" class="validate">
           <label for="Input">Input</label>
         </div>
           <div class="input-field col s6">
-          <button class="btn-floating pulse"><i class="fas fa-angle-right"></i></button>
+          <button type="submit" class="btn-floating pulse"><i class="fas fa-angle-right"></i></button>
           </div>
       </div>
-
+      <div class="row">
+        <div class="input-field col s12">
+          <input disabled value="Output" id="disabled" type="text" class="validate">
+          <label for="disabled">Output</label>
+        </div>
+      </div>
 {#        Table that will contain all of the conversions#}
         <table>
             <thead>
@@ -57,10 +55,15 @@
             </tbody>
         </table>
     </form>
+    <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="images/yuna.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 </div>
-
-<script src="{% static 'script/materialize.js' %}"></script>
-<script src="{% static 'script/materialize.min.js' %}"></script>
-</body>
-</html>
+{% endblock %}
