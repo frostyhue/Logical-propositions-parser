@@ -4,6 +4,7 @@
 #                                                                             #
 ###############################################################################
 
+# All of the token types.
 BICOND = "BICOND"
 COND = "COND"
 AND = "AND"
@@ -14,7 +15,7 @@ LPAR = "LPAR"
 RPAR = "RPAR"
 COMMA = "COMMA"
 
-
+# Regular expression used to generate each token type.
 token_exprs = [
     (r'[ \n\t]+',               None),
     (r'[=]',                    BICOND),

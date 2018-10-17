@@ -1,5 +1,5 @@
-from Interpreter import *
-from SimplifiedTT import *
+from tool.classes.Interpreter import *
+from tool.classes.SimplifiedTT import *
 
 def main():
     while True:

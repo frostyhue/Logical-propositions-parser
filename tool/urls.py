@@ -4,7 +4,7 @@ from tool.views import *
 
 
 urlpatterns = [
-    url(r'^$', ToolView.as_view(), name='tool'),
-    url(r'tests/', views.tests, name='tests'),
-
+    url(r'^$', views.index, name='index'),
+    url(r'tests/$', views.tests, name='tests'),
+    url(r'convert/$', views.convert, name='convert')
 ]

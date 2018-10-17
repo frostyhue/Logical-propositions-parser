@@ -8,13 +8,14 @@
 {#The input row#}
 <div class="row">
 
+
 {#    form for posting the input and receiving the ouptup #}
 
-    <form method="POST" action="" class="col s12">
+    <form method="POST" action="/tool/convert/" class="col s12">
         {% csrf_token %}
       <div class="row">
         <div class="input-field col s6">
-          <input placeholder="=(>(A, B), |(~(A), B))" id="Input" type="text" class="validate">
+          <input oninput="filterInput(this)" placeholder="=(>(A, B), |(~(A), B))" name="expr" value="{{ input }}" type="text" class="validate">
           <label for="Input">Input</label>
         </div>
           <div class="input-field col s6">
@@ -23,35 +24,56 @@
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input disabled value="Output" id="disabled" type="text" class="validate">
+          <input name="output" style="color: #212121" disabled value="{{ expr }}" id="disabled" type="text" class="validate">
           <label for="disabled">Output</label>
         </div>
+          <div class="input-field col s12">
+          <input name="hex" style="color: #212121" disabled value="{{ hex }}" id="disabled" type="text" class="validate">
+          <label for="disabled">Hexadecimal</label>
+        </div>
+          <div class="input-field col s12">
+          <input name="bin" style="color: #212121" disabled value="{{ bin }}" id="disabled" type="text" class="validate">
+          <label for="disabled">Binary</label>
+        </div>
       </div>
+
 {#        Table that will contain all of the conversions#}
+    <h5>Truth Table</h5>
         <table>
             <thead>
               <tr>
-                  <th>Result</th>
-                  <th></th>
+            {% for predicate in pred_list %}
+                  <th>{{ predicate }}</th>
+            {% endfor %}
               </tr>
             </thead>
-
             <tbody>
+            {% for row in TruthTable %}
+                <tr>
+                  {% for value in row.values %}
+                      <td>{{ value }}</td>
+                  {% endfor %}
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    <h5>Simplified Truth Table</h5>
+        <table>
+            <thead>
               <tr>
-                <td>Output</td>
-                <td>result goes here</td>
+            {% for predicate in pred_list %}
+                  <th>{{ predicate }}</th>
+            {% endfor %}
               </tr>
-
-              <tr>
-                <td>smth else</td>
-                <td>result goes here</td>
-              </tr>
-
-            <tr>
-                <td>NAND</td>
-                <td>result goes here</td>
-              </tr>
-
+            </thead>
+            <tbody>
+            {% for row in SimplifiedTT.truth_table %}
+                <tr>
+                  {% for value in row.values %}
+                      <td>{{ value }}</td>
+                  {% endfor %}
+                </tr>
+            {% endfor %}
             </tbody>
         </table>
     </form>

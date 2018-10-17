@@ -1,5 +1,5 @@
 from itertools import *
-from Row import *
+from tool.classes.Row import *
 ###############################################################################
 #                                                                             #
 #  TruthTable                                                                 #
@@ -17,9 +17,6 @@ class TruthTable(object):
         self.hex = ''
         self.truth_table = []
 
-    def print_predicates(self):
-        print('\n' + ' '.join(self.exp_pred))
-
     def populate_tt(self):
         for values in product(range(2), repeat=len(self.predicates)):
             self.env = dict(zip(self.predicates, values))
@@ -29,10 +26,6 @@ class TruthTable(object):
         self.bin = str(self.bin)[::-1]
         self.hex = hex(int(self.bin, 2))[2:]
 
-    def print_tt(self):
-        for values in self.truth_table:
-            print(' '.join(str(v) for v in values.values))
-
     def remove_rows_ending_0(self):
         for row in self.truth_table:
             if row[len(row) - 1] == 1:
@@ -41,9 +34,3 @@ class TruthTable(object):
     def print_simplified_tt(self):
         for values in self.simplified_table:
             print(' '.join(str(v) for v in values.values))
-
-    def print_binary(self):
-        print(self.bin)
-
-    def print_hex(self):
-        print(self.hex)
