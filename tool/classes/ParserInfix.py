@@ -36,7 +36,7 @@ class ParserInfix(Parser):
         elif token.type == NOT:
             op = Token(type=NOT, value=u'\u00AC')
             self.pop_token(NOT)
-            if self.current_token == LPAR:
+            if self.current_token.type == LPAR:
                 self.pop_token(LPAR)
             node = ContradicOp(op=op, expr=self.op_statement())
             return node
