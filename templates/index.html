@@ -25,7 +25,11 @@
       <div class="row">
         <div class="input-field col s12">
           <input name="output" style="color: #212121" disabled value="{{ expr }}" id="disabled" type="text" class="validate">
-          <label for="disabled">Output</label>
+          <label for="disabled">Expression in Infix</label>
+        </div>
+        <div class="input-field col s12">
+          <input name="output" style="color: #212121" disabled value="{{ expr_bool }}" id="disabled" type="text" class="validate">
+          <label for="disabled">Expression in Python Boolean</label>
         </div>
           <div class="input-field col s12">
           <input name="hex" style="color: #212121" disabled value="{{ hex }}" id="disabled" type="text" class="validate">
@@ -35,10 +39,21 @@
           <input name="bin" style="color: #212121" disabled value="{{ bin }}" id="disabled" type="text" class="validate">
           <label for="disabled">Binary</label>
         </div>
+
+        <div class="input-field col s12">
+          <textarea name="bin" style="color: #212121" disabled id="textarea1" class="materialize-textarea">{{ tt_dnf }}</textarea>
+          <label for="disabled">DNF for the Truth Table</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea name="bin" style="color: #212121" disabled id="textarea1" class="materialize-textarea">{{ stt_dnf }}</textarea>
+          <label for="disabled">DNF for the Simplified Truth Table</label>
+        </div>
+
       </div>
 
 {#        Table that will contain all of the conversions#}
-    <h5>Truth Table</h5>
+    <div class="card-panel hoverable">
+        <h5><b>Truth Table</b></h5>
         <table>
             <thead>
               <tr>
@@ -57,7 +72,9 @@
             {% endfor %}
             </tbody>
         </table>
-    <h5>Simplified Truth Table</h5>
+    </div>
+        <div class="card-panel hoverable">
+            <h5><b>Simplified Truth Table</b></h5>
         <table>
             <thead>
               <tr>
@@ -76,15 +93,13 @@
             {% endfor %}
             </tbody>
         </table>
+        </div>
     </form>
     <div class="col s12 m8 offset-m2 l6 offset-l3">
-        <div class="card-panel grey lighten-5 z-depth-1">
-          <div class="row valign-wrapper">
-            <div class="col s2">
-              <img src="images/yuna.jpg" alt="" class="responsive-img"> <!-- notice the "circle" class -->
-            </div>
-          </div>
-        </div>
+         <div class="card-panel hoverable">
+            <h5><b>Graphical representation</b></h5>
+              <img style="" src="{% static 'images/tree.png' %}" alt="" class="responsive-img ">
+         </div>
       </div>
   </div>
 </div>

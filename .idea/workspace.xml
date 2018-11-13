@@ -5,23 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a21d300f-0151-4331-8da0-53b2a3c46016" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/project/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/Main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tests.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tool/classes/Interpreter.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/classes/Interpreter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/classes/Lexer.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/classes/Lexer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/classes/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/classes/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/classes/NodeVisitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/classes/NodeVisitor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/classes/Main.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tool/classes/Operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/classes/Operations.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tool/classes/Parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/classes/Parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tool/classes/ParserBoolExpr.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/classes/ParserBoolExpr.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tool/classes/ParserInfix.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/classes/ParserInfix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/classes/Row.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/classes/Row.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tool/classes/SimplifiedTT.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/classes/SimplifiedTT.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tool/classes/TruthTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/classes/TruthTable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/classes/token_expressions.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/classes/token_expressions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/classes/UnitTests/InterpreterUnitTests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/classes/UnitTests/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tool/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tool/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/views.py" afterDir="false" />
     </list>
@@ -34,6 +34,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/project$test_combinators.coverage" NAME="test_combinators Coverage Results" MODIFIED="1537185123755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/imp-interpreter/imp-interpreter" />
+    <SUITE FILE_PATH="coverage/project$Node.coverage" NAME="Node Coverage Results" MODIFIED="1539895099749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool/classes" />
     <SUITE FILE_PATH="coverage/project$testFile.coverage" NAME="testFile Coverage Results" MODIFIED="1536524144309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
@@ -41,14 +42,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="InterpreterUnitTests.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tool/classes/UnitTests/InterpreterUnitTests.py">
+      <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="340">
+              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
               <folding>
-                <element signature="e#176#191#0" expanded="true" />
+                <element signature="e#22#31#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tool/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="45" lean-forward="true" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+              <folding>
+                <element signature="e#65#101#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="986">
+              <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -56,11 +78,25 @@
       <file leaf-file-name="Interpreter.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tool/classes/Interpreter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="23" />
+            <state relative-caret-position="595">
+              <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NodeVisitor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tool/classes/NodeVisitor.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="ParserInfix.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tool/classes/ParserInfix.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-444">
+              <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -83,7 +119,15 @@
       <find>form</find>
       <find>not</find>
       <find>get_tokens</find>
+      <find>expr</find>
+      <find>TokenNode</find>
+      <find>Node</find>
+      <find>print</find>
+      <find>predicates</find>
     </findStrings>
+    <dirStrings>
+      <dir>D:\university stuff\ale1\project</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -92,7 +136,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/tool/templates/index.html" />
-        <option value="$PROJECT_DIR$/project/settings.py" />
         <option value="$PROJECT_DIR$/static/style/test.css" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/tool/classes/__init__.py" />
@@ -111,28 +154,37 @@
         <option value="$PROJECT_DIR$/tool/forms.py" />
         <option value="$PROJECT_DIR$/tool/form.html" />
         <option value="$PROJECT_DIR$/tool/form.py" />
-        <option value="$PROJECT_DIR$/tool/urls.py" />
-        <option value="$PROJECT_DIR$/tool/classes/Main.py" />
-        <option value="$PROJECT_DIR$/project/urls.py" />
-        <option value="$PROJECT_DIR$/tool/classes/TruthTable.py" />
         <option value="$PROJECT_DIR$/../../mini-personal-projects/Logical-propositions-parser/Parser.py" />
         <option value="$PROJECT_DIR$/../../mini-personal-projects/Logical-propositions-parser/SimplifiedTT.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/tool/views.py" />
-        <option value="$PROJECT_DIR$/templates/layout.html" />
         <option value="$PROJECT_DIR$/templates/tests.html" />
-        <option value="$PROJECT_DIR$/tool/classes/Interpreter.py" />
         <option value="$PROJECT_DIR$/tool/classes/Row.py" />
-        <option value="$PROJECT_DIR$/tool/classes/SimplifiedTT.py" />
         <option value="$PROJECT_DIR$/tool/classes/token_expressions.py" />
-        <option value="$PROJECT_DIR$/tool/classes/ParserInfix.py" />
-        <option value="$PROJECT_DIR$/tool/classes/ParserBoolExpr.py" />
-        <option value="$PROJECT_DIR$/tool/classes/Parser.py" />
         <option value="$PROJECT_DIR$/tool/classes/Operations.py" />
         <option value="$PROJECT_DIR$/tool/classes/NodeVisitor.py" />
-        <option value="$PROJECT_DIR$/tool/classes/Lexer.py" />
         <option value="$PROJECT_DIR$/tool/classes/UnitTests/UnitTests.py" />
         <option value="$PROJECT_DIR$/tool/classes/UnitTests/InterpreterUnitTests.py" />
+        <option value="$PROJECT_DIR$/tool/classes/ParserBoolExpr.py" />
+        <option value="$PROJECT_DIR$/tool/classes/Interpreter.py" />
+        <option value="$PROJECT_DIR$/tool/classes/Nodes.py" />
+        <option value="$PROJECT_DIR$/tool/classes/NodeVisualizer.py" />
+        <option value="$PROJECT_DIR$/../unit_tests/gendot.py" />
+        <option value="$PROJECT_DIR$/tool/classes/Node.py" />
+        <option value="$PROJECT_DIR$/tool/classes/Main.py" />
+        <option value="$PROJECT_DIR$/tool/classes/Parser.py" />
+        <option value="$PROJECT_DIR$/../unit_tests/Test_Interpreter.py" />
+        <option value="$PROJECT_DIR$/tool/classes/TreeVisualizer.py" />
+        <option value="$PROJECT_DIR$/tool/classes/Lexer.py" />
+        <option value="$PROJECT_DIR$/tool/classes/ParserInfix.py" />
+        <option value="$PROJECT_DIR$/tool/classes/TruthTable.py" />
+        <option value="$PROJECT_DIR$/tool/classes/SimplifiedTT.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/project/views.py" />
+        <option value="$PROJECT_DIR$/project/urls.py" />
+        <option value="$PROJECT_DIR$/tool/urls.py" />
+        <option value="$PROJECT_DIR$/templates/Main.html" />
+        <option value="$PROJECT_DIR$/templates/layout.html" />
+        <option value="$PROJECT_DIR$/project/settings.py" />
+        <option value="$PROJECT_DIR$/tool/views.py" />
       </list>
     </option>
   </component>
@@ -157,6 +209,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,6 +225,11 @@
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -183,24 +241,24 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../unit_tests" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\university stuff\ale1\project\templates" />
+      <recent name="D:\university_stuff\ale1\project\project" />
+      <recent name="D:\university_stuff\ale1\project\templates" />
       <recent name="D:\university stuff\ale1\project\tool\classes" />
+      <recent name="D:\university stuff\ale1\project\templates" />
       <recent name="D:\university stuff\ale1\project\static\images" />
-      <recent name="D:\university stuff\ale1\project\static\script" />
-      <recent name="D:\university stuff\ale1\project\templates\style" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\university stuff\ale1\project" />
@@ -222,7 +280,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_combinators">
+  <component name="RunManager" selected="Python.Node">
+    <configuration name="Node" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tool/classes" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tool/classes/Node.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="testFile" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -288,9 +365,11 @@
       <item itemvalue="Django server.project" />
       <item itemvalue="Python.testFile" />
       <item itemvalue="Python.test_combinators" />
+      <item itemvalue="Python.Node" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Node" />
         <item itemvalue="Python.test_combinators" />
         <item itemvalue="Python.testFile" />
       </list>
@@ -311,7 +390,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32905984" />
@@ -320,7 +398,7 @@
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32905984" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32905984" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32905984" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3167785" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20268457" />
       <window_info anchor="right" id="R Packages" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="3" />
@@ -346,78 +424,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tool/classes/LgOr.py" />
-    <entry file="file://$PROJECT_DIR$/tool/classes/LgAnd.py" />
-    <entry file="file://$PROJECT_DIR$/tool/classes/LgBiconditional.py" />
-    <entry file="file://$PROJECT_DIR$/tool/classes/LgImplication.py" />
-    <entry file="file://$PROJECT_DIR$/tool/classes/LgNot.py" />
-    <entry file="file://$USER_HOME$/Desktop/imp-interpreter/imp-interpreter/imp_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2293">
-          <caret line="135" column="22" lean-forward="true" selection-start-line="135" selection-start-column="22" selection-end-line="135" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/imp-interpreter/imp-interpreter/test_combinators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="61" column="28" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/imp-interpreter/imp-interpreter/combinators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/imp-interpreter/imp-interpreter/imp_parser_driver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="37" column="34" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/imp-interpreter/imp-interpreter/lexer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264">
-          <caret selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/imp-interpreter/imp-interpreter/imp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/imp-interpreter/imp-interpreter/imp_ast.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/imp-interpreter/imp-interpreter/imp_lexer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="27" selection-start-line="27" selection-end-line="59" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/65892325/__builtin__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="779" column="8" selection-start-line="779" selection-start-column="8" selection-end-line="779" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../mini-personal-projects/simple-interpreter/cp.py" />
-    <entry file="file://$PROJECT_DIR$/tool/classes/LGC.py" />
-    <entry file="file://$PROJECT_DIR$/tool/classes/Result.py" />
-    <entry file="file://$PROJECT_DIR$/tool/classes/testing-data.py" />
     <entry file="file://$PROJECT_DIR$/tool/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -433,23 +443,6 @@
     <entry file="file://$PROJECT_DIR$/screenshots/web_gui_v1.gif">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/classes/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="49" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../mini-personal-projects/Logical-propositions-parser/Main.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -463,27 +456,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/classes/TruthTable.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../mini-personal-projects/Logical-propositions-parser/SimplifiedTT.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="71" column="8" lean-forward="true" selection-start-line="71" selection-start-column="8" selection-end-line="76" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -494,40 +470,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="11" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/classes/SimplifiedTT.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tool/classes/Row.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -535,9 +477,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/classes/Token.py">
+    <entry file="file://$PROJECT_DIR$/tool/classes/UnitTests/Main.py" />
+    <entry file="file://$PROJECT_DIR$/tool/classes/UnitTests/UnitTests.py" />
+    <entry file="file://$PROJECT_DIR$/tool/classes/__main__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/tool/classes/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/classes/UnitTests/InterpreterUnitTests.py" />
+    <entry file="file://$PROJECT_DIR$/project/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/classes/Node.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-71">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/template/defaulttags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../unit_tests/lx.py" />
+    <entry file="file://$PROJECT_DIR$/../unit_tests/gendot.py" />
     <entry file="file://$PROJECT_DIR$/tool/classes/token_expressions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -545,90 +512,189 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/classes/ParserInfix.py">
+    <entry file="file://$PROJECT_DIR$/../unit_tests/Test_ParserInfix.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../unit_tests/Test_TruthTable.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../unit_tests/Test_ParserBoolExpr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        <state relative-caret-position="-77" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../unit_tests/Test_Interpreter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/classes/ParserBoolExpr.py">
+    <entry file="file://$PROJECT_DIR$/tool/classes/Main.py" />
+    <entry file="file://$PROJECT_DIR$/tool/classes/TreeVisualizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        <state relative-caret-position="-94">
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/classes/Parser.py">
+    <entry file="file://$PROJECT_DIR$/static/images/square-root-alt-solid.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/classes/TruthTable.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+        <state relative-caret-position="498">
+          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/classes/SimplifiedTT.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../unit_tests/ParserInfix.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/classes/Node.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tool/classes/Operations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="81" selection-start-line="7" selection-start-column="81" selection-end-line="7" selection-end-column="81" />
+        <state relative-caret-position="-427">
+          <caret line="7" column="75" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/classes/NodeVisitor.py">
+    <entry file="file://$PROJECT_DIR$/tool/classes/ParserBoolExpr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="-393">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="26" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="80" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/classes/Parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/classes/Token.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tool/classes/Lexer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="89" selection-start-line="59" selection-start-column="89" selection-end-line="59" selection-end-column="89" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-187">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/classes/UnitTests/Main.py">
+    <entry file="file://$PROJECT_DIR$/tool/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="323">
+          <caret line="19" column="45" lean-forward="true" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#65#101#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/classes/UnitTests/UnitTests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tool/classes/Interpreter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="23" />
+        <state relative-caret-position="595">
+          <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/classes/__main__.py">
+    <entry file="file://$PROJECT_DIR$/tool/classes/NodeVisitor.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/classes/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/classes/UnitTests/InterpreterUnitTests.py">
+    <entry file="file://$PROJECT_DIR$/tool/classes/ParserInfix.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding>
-            <element signature="e#176#191#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-444">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
         </state>
       </provider>
     </entry>

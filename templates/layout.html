@@ -20,11 +20,7 @@
 <!-- NavBar -->
 <nav>
     <div style="background: #26a69a" class="nav-wrapper">
-      <a href="/tool/" class="brand-logo">Logo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="/tool/">Tool</a></li>
-        <li><a href="/tool/tests/">Unit tests</a></li>
-      </ul>
+      <a style="margin-left: 20px;" href="/tool/" class="brand-logo">RT</a>
     </div>
   </nav>
 <!-- /NavBar -->
@@ -38,6 +34,7 @@
     $(document).ready(function(){
         $('select').formSelect();
   });
+    M.textareaAutoResize($('#textarea1'));
 </script>
 <script>
     function filterInput(input) {

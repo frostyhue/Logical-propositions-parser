@@ -38,7 +38,7 @@ class ParserBoolExpr(Parser):
             self.pop_token(NOT)
             if self.current_token.type == LPAR:
                 self.pop_token(LPAR)
-            node = ContradicOp(op=op, expr=self.bool_expr_statement())
+            node = ContradicOp(op=op, prep=self.bool_expr_statement())
             return node
 
         # Logic if the current token is one of the Contingency operators.

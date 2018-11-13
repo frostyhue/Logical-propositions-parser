@@ -5,11 +5,23 @@ from django.shortcuts import render
 from tool.classes.Interpreter import *
 from tool.classes.SimplifiedTT import *
 from django.views.generic import *
+from tool.classes.TreeVisualizer import *
 from django.shortcuts import *
+import os
+
+# Function used by the url file to redirect to the index's page.
+def main(request):
+    return render(request, 'Main.html')
 
 
 # Function used by the url file to redirect to the index's page.
-def index(request):
+def tool(request):
+    if os.path.exists("static/images/output.dot"):
+        os.remove("static/images/output.dot")
+
+    if os.path.exists("static/images/tree.png"):
+        os.remove("static/images/tree.png")
+
     return render(request, 'index.html')
 
 
@@ -27,11 +39,21 @@ def convert(request):
         interpreter_boolean = Interpreter(parser_boolean)
         result_boolean = interpreter_boolean.interpret()
 
-        # reate the lexer, parser, interpreter of the infix expression and assign the result to a variable.
+        # Create the lexer, parser, interpreter of the infix expression and assign the result to a variable.
         lexer_infix = Lexer(expr)
         parser_infix = ParserInfix(lexer_infix)
         interpreter_infix = Interpreter(parser_infix)
         result_infix = interpreter_infix.interpret()
+
+        # Generate graph
+        viz = TreeVisualizer(parser_infix)
+        content = viz.gendot()
+        image_name = 'tree.png'
+        image_parth = 'images/{name}'.format(name=image_name)
+        with open("static/images/output.dot", "w+") as fh:
+            fh.write(content)
+        os.chmod("static/images/output.dot", 0o777)
+        os.system("dot -Tpng -o static/images/tree.png static/images/output.dot")
 
         # Create a list of predicates to add the expression in infix notation.
         predicates_list = []
@@ -54,15 +76,25 @@ def convert(request):
         # Create the variable for the binary of the expression.
         bin = tt.bin
 
+        # Get the value of the normalization for the truth table.
+        tt_dnf = tt.dnf()
+
+        # Get the value of the normalization for the simplified truth table.
+        stt_dnf = stt.dnf()
+
         # Populate the context that will be passed to the index.html page,
         context = {
             'bin': bin,
             'hex': hex.upper(),
             'input': expr,
             'expr': result_infix,
+            'expr_bool': result_boolean,
             'pred_list': predicates_list,
             'TruthTable': tt.truth_table,
-            'SimplifiedTT': stt.simplified_table
+            'SimplifiedTT': stt.simplified_table,
+            'image_path': image_parth,
+            'tt_dnf': tt_dnf,
+            'stt_dnf': stt_dnf
         }
 
         # Returns the rendered request, destination page and the context data that we want to pass to the page.

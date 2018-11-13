@@ -1,5 +1,7 @@
 from tool.classes.Lexer import *
 from tool.classes.Operations import *
+from tool.classes.Node import *
+
 
 ###############################################################################
 #                                                                             #
@@ -13,6 +15,9 @@ class Parser(object):
         self.tokens_list = self.lexer.lex()
         self.current_token = self.tokens_list[0]
         self.pred_list = []
+
+        self.root = None
+        self.current_node = None
 
     # Method that raises and error.
     def error(self):
@@ -31,3 +36,15 @@ class Parser(object):
         pred_list = list(set(self.pred_list))
         pred_list.sort()
         return pred_list
+
+    def assign_graph_node(self, node):
+        graph_node = TokenNode(node.value)
+        if node.type in (COND, BICOND, AND, OR):
+            if self.root is None:
+                self.root = graph_node
+                self.current_node = graph_node
+            else:
+                self.current_node.add(graph_node)
+                self.current_node = graph_node
+        elif node.type == LETTER:
+            self.current_node.add(graph_node)

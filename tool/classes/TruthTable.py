@@ -26,11 +26,26 @@ class TruthTable(object):
         self.bin = str(self.bin)[::-1]
         self.hex = hex(int(self.bin, 2))[2:]
 
-    def remove_rows_ending_0(self):
+    # Create the dnf of the truth table.
+    def dnf(self):
+        temp_table = []
         for row in self.truth_table:
-            if row[len(row) - 1] == 1:
-                self.simplified_table.append(Row(row[:len(row)-1]))
-
-    def print_simplified_tt(self):
-        for values in self.simplified_table:
-            print(' '.join(str(v) for v in values.values))
+            if row.values[len(row.values) - 1] == 1:
+                temp_table.append(row)
+        dnf = []
+        for row in temp_table:
+            dnf_result = '('
+            for i in range(len(row.values)):
+                if not i == len(row.values)-1:
+                    if row.values[i] == 1:
+                        dnf_result = dnf_result  + self.predicates[i] + u'\u2227'
+                    elif row.values[i] == 0:
+                        dnf_result = dnf_result + u'\u00AC' +self.predicates[i] + u'\u2227'
+                else:
+                    dnf_result = dnf_result[:-1] + ')'
+            dnf.append(dnf_result)
+        result = ''
+        for expr in dnf:
+            result = result + expr + u'\u2228'
+        result = result[:-1]
+        return result

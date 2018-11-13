@@ -90,3 +90,29 @@ class SimplifiedTT(object):
         for row in self.truth_table:
             if row.values[len(row.values) - 1] == 1:
                 self.simplified_table.append(row)
+
+    # Create the dnf of the simplified truth table
+    def dnf(self):
+        temp_table = []
+        for row in self.simplified_table.truth_table:
+            if row.values[len(row.values) - 1] == 1:
+                temp_table.append(row)
+        dnf = []
+        for row in temp_table:
+            dnf_result = '('
+            for i in range(len(row.values)):
+                if not i == len(row.values)-1:
+                    if row.values[i] == 1:
+                        dnf_result = dnf_result  + self.predicates[i] + u'\u2227'
+                    elif row.values[i] == 0:
+                        dnf_result = dnf_result + u'\u00AC' +self.predicates[i] + u'\u2227'
+                    elif row.values[i] == '*':
+                        dnf_result = dnf_result + u'\u00AC' +self.predicates[i] + u'\u2227'+self.predicates[i] + u'\u2227'
+                else:
+                    dnf_result = dnf_result[:-1] + ')'
+            dnf.append(dnf_result)
+        result = ''
+        for expr in dnf:
+            result = result + expr + u'\u2228'
+        result = result[:-1]
+        return result

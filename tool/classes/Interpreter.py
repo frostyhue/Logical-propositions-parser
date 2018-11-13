@@ -33,7 +33,7 @@ class Interpreter(NodeVisitor):
 
     # Method that processes the node and returns the format for the Contradiction Operations for both expression.
     def visit_ContradicOp(self, node):
-        return node.op.value + self.visit(node.expr)
+        return node.op.value + self.visit(node.prep)
 
     # Method that processes the node and returns the format for the Preposition for both expression.
     def visit_Prep(self, node):
