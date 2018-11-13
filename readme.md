@@ -28,14 +28,11 @@ The application converts a logical expression in prefix to infix and python Bool
 - [Python](https://www.python.org/downloads/release/python-370/)
 - [Django](https://docs.djangoproject.com/en/2.1/topics/install/)
 
-## Tests
-Run the file ‘run_tests.bat’ from the previous folder.
-
 ## Legend
-For Implication instead of (A?B) use >(A, B);
-For XNOR instead of (A?B) use =(A, B);
-For Logical OR instead of (A?B) use |(A, B);
-For Logical AND instead of (A?B) use &(A, B);
+- For Implication instead of (A?B) use >(A, B);
+- For XNOR instead of (A?B) use =(A, B);
+- For Logical OR instead of (A?B) use |(A, B);
+- For Logical AND instead of (A?B) use &(A, B);
 
 
 ## How to use?
