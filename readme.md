@@ -39,7 +39,9 @@ The application converts a logical expression in prefix to infix and python Bool
 Pre requisites are:
 * Python
 * Django
-If Django and python are installed, the only action necessary is to open a cmd in the root folder of the Django project, in this case project folder(containing the readme.md, tool, static and etcetera). Then enter command ’python manage.py runserver’. This is to make a local server for the project, http://127.0.0.1:8000 is the address that the website can be viewed.
-If none are installed, http://206.189.10.159 .The only issue with this version is that due to some permission issues for generating the graph, it has been excluded from the final version and can be tested by following the instructions from ‘Tests and graph instructions’ file.
+If Django and python are installed, the only action necessary is to open a cmd in the root folder of the Django project, in this case project folder(containing the readme.md, tool, static and etcetera). Then enter command â€™python manage.py runserverâ€™. This is to make a local server for the project, http://127.0.0.1:8000 is the address that the website can be viewed.
+If none are installed, http://206.189.10.159 .The only issue with this version is that due to some permission issues for generating the graph, it has been excluded from the final version and can be tested by following the instructions from â€˜Tests and graph instructionsâ€™ file.
+
+Note: The serve is not running!!
 ## Contribute
 Rostislav Tinchev 358097
